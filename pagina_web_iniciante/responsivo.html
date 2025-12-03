@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de responsividade</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+
+        main {
+            background-color: white;
+            padding: 2px;
+            border-radius: 10px;
+            min-width: 320px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Deixando a imagem responsiva com tamanhos de tela */
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero distinctio impedit molestias veniam est sequi sunt facilis necessitatibus qui obcaecati autem dolorum provident labore, quia possimus at, aliquam nihil nostrum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem molestiae ad aliquid in dolores accusantium, sapiente hic officia laudantium sed ducimus nostrum odio cum illum dolore assumenda debitis numquam harum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi ea unde pariatur, laborum sunt harum quia quo maxime dolores, qui ducimus itaque? Ratione ducimus labore, voluptatibus assumenda beatae modi repudiandae?</p>
+        <!-- utilizando o picture e o source para deixar a img responsiva com tamanhos de tela pequenos, trocando a imagem por uma outra menor -->
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="irina-blok">
+        </picture>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis optio aliquid voluptatibus minima vel asperiores ratione corrupti quae, iure esse, laborum, ex rerum expedita. Autem optio quod commodi atque modi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum a dolore aliquid adipisci, temporibus tempore ab nam molestias cum totam nesciunt reiciendis fugit! Harum eveniet earum nulla aliquam impedit eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus velit aperiam corrupti repellat est ullam mollitia iure quidem numquam, aspernatur ipsum excepturi odio ea iusto voluptatem! Reprehenderit, pariatur quis.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* 
+    # Id
+    . Class
+    : Pseudo classses
+    :: pseudo Elementos
+
+*/
+
+body {
+    font: normal 16px Arial;
+    background-color: grey;
+}
+
+h1 {
+    text-align: center;
+}
+/* ID */
+#Principal {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    /* justify da espaçamento igual na direita e esquerda */
+    text-align: justify;
+    /* espaçamento de inicio de paragrafo */
+    text-indent: 30px;
+}
+/* Classes */
+.Paragrafos_escrita {
+    color: white;
+}
+
+div {
+    background-color: black;
+    height: 800px;
+    width: 800px;
+    margin: auto;
+    padding: 30px;
+
+}
+
+.Paragrafos {
+    height: auto;
+    width: 800px;
+    padding: 30px;
+}
+
+
+
+/* Pseudo classes, ao fazer algo acontece alguma coisa, nesse caso ao passar o mouse encima a div muda de cor */
+div:hover {
+    background-color: yellow;
+}
+
+a {
+    color: black;
+/*Tirando sublinhado de todos os links*/
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Caso o link seja visitado */
+a:visited {
+    color: red;
+}
+
+a:hover {
+    /* Aparecer sublinhado */
+    text-decoration: underline;
+}
+
+
