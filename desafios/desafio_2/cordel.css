@@ -52,7 +52,9 @@ section.imagem {
     color: white;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: cover;
+    background-size: cover;
+    box-shadow: inset 0px 2px 10px 0px rgba(0, 0, 0, 0.658);
+    background-attachment: fixed;
 }
 
 section.imagem#imagem1 {
@@ -63,8 +65,9 @@ section.imagem#imagem2 {
 }
 
 section.imagem p {
+    border-radius: 5px;
     display: inline-block;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.336);
     padding: 8px;
 }
 
