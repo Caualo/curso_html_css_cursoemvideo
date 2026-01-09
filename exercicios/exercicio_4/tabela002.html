@@ -10,10 +10,22 @@
             width: 400px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
+        }
+        thead tr th {
+            position: sticky;
+            top: 0;
+            background-color: #363636;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+        /* Usando pseudoclasse para dar efeito zebrado em tabelas
+            2n é a cada duas linhas
+        */
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
         }
         th {
             background-color: #363636;
@@ -21,6 +33,11 @@
         }
         h1 {
             text-align: center;
+        }
+        caption {
+            font-size: 1em;
+            margin-bottom: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -39,10 +56,13 @@
              TD
     -->
              <table>
+                <caption>
+                    população das unidades federativas do Brasil em 2023
+                </caption>
                 <thead>
                     <tr>
-                        <th>Estado</th>
-                        <th>População</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">População</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -86,10 +106,50 @@
                         <td>Santa Catarina</td>
                         <td>7.338.473</td>
                     </tr>
+                    <tr>
+                        <td>Goiás</td>
+                        <td>7.113.540</td>
+                    </tr>
+                    <tr>
+                        <td>Amazonas</td>
+                        <td>4.269.995</td>
+                    </tr>
+                    <tr>
+                        <td>Espírito Santo</td>
+                        <td>4.018.650</td>
+                    </tr>
+                    <tr>
+                        <td>Paraíba</td>
+                        <td>4.039.277</td>
+                    </tr>
+                    <tr>
+                        <td>Rio Grande do Norte</td>
+                        <td>3.534.165</td>
+                    </tr>
+                    <tr>
+                        <td>Maranhão</td>
+                        <td>7.075.181</td>
+                    </tr>
+                    <tr>
+                        <td>Alagoas</td>
+                        <td>3.350.344</td>
+                    </tr>
+                    <tr>
+                        <td>Piauí</td>
+                        <td>3.281.480</td>
+                    </tr>
+                    <tr>
+                        <td>Distrito Federal</td>
+                        <td>3.055.149</td>
+                    </tr>
+                    <tr>
+                        <td>Mato Grosso</td>
+                        <td>3.526.220</td>
+                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <th>
+                        <th scope="row">
                             Total
                         </th>
                         <td>
