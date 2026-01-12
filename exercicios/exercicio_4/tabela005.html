@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    <style>
+          table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+        thead tr th {
+            position: sticky;
+            top: 0;
+            background-color: #363636;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+        th {
+            background-color: #363636;
+            color: white;
+        }
+        #container {
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sunt nihil at cum dolore autem beatae eaque ullam quia vitae pariatur distinctio eos. Obcaecati aliquid, excepturi totam temporibus veritatis culpa.</p>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th>Março</th>
+                    <th>Abril</th>
+                    <th>Maio</th>
+                    <th>Junho</th>
+                    <th>Julho</th>
+                    <th>Agosto</th >
+                    <th>Setembro</th>
+                    <th>Outubro</th>
+                    <th>Novembro</th>
+                    <th>Dezembro</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
