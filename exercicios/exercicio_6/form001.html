@@ -17,7 +17,9 @@
     <h1>Primeiro formulario</h1>
     <!-- Action é para informar o arquivo que vai tratar desses dados -->
     <!-- Sempre usar label para associar o texto ao campo de entrada -->
-    <form  action="cadastro.js" autocomplete="off">
+    <!-- Usar method="get" para dados com menos risco pois aparecem na URL -->
+     <!-- Usar method="post" para dados mais sensíveis -->
+    <form  action="" autocomplete="off" method="post">
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Sobrenome:</label> 
