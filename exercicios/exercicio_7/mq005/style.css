@@ -21,7 +21,6 @@ header h1 {
 }
 
 menu {
-    display: none;
     background-color: rgb(62, 62, 62);
     text-align: center;
 }
@@ -48,8 +47,8 @@ menu a {
     display: block;
     color: white;
     text-decoration: none;
-    border-top: 2px solid gray;
     width: 100vw;
+    border-top: 2px solid gray;
     padding: 10px 0px 10px 0px;
 }
 
