@@ -56,4 +56,17 @@ div#form h1 {
 
 div#form p {
     font-size: 0.7em;
+    margin-bottom: 10px;
 }
+
+form input[type=submit] {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    text-align: center;
+}
+
